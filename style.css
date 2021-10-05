@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.background {
+    height: 45vh;
+    background-image: url(../ip-address-tracker-master/images/pattern-bg.png);
+    background-size: cover;
+    background-position: top;
+}
+
+#mapid {
+    height: 55vh;
+    /* background-color: blue; */
+}
+
+.wrapper {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 21rem;
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.ad-ip-adress {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background: white;
+    margin-bottom: 2rem;
+    height: 60px;
+    cursor: pointer;
+}
+
+.ad-ip-adress:pressed {
+    border: none;
+}
+
+.ad-ip-adress input {
+    border: none;
+    font-size: 1rem;
+    padding-left: 1rem;
+    flex-grow: 2;
+}
+
+button {
+    width: 3rem;
+    height: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.content {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.content div {
+    padding: .5rem;
+    flex-wrap: wrap;
+    display: grid;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(0, 0%, 59%);
+    font-size: .8rem;
+}
+
+.content span {
+    color: hsl(0, 0%, 17%);
+}
+
+.content span {
+    color: hsl(0, 0%, 17%);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-top: .3rem;
+}
+
+@media (min-width: 767px) {
+    .background {
+        height: 29vh;
+    }
+
+    .wrapper {
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        width: 100%;
+
+    }
+
+
+    .content {
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        justify-content: space-around;
+        box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
+    }
+
+    .content div {
+        height: 5rem;
+        flex-wrap: wrap;
+        text-align: left;
+        /* border-right: 1px solid hsl(0, 0%, 59%, .2); */
+        /* padding-right: 2rem; */
+    }
+
+    .content div:last-child {
+        border-right: none;
+    }
+
+    .ad-ip-adress {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 1rem;
+        background: white;
+        margin-bottom: 2rem;
+        height: 60px;
+        cursor: pointer;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+    }
+
+    .attribution {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1444px) {
+    .background {
+        height: 33vh;
+    }
+
+    .wrapper {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        width: 100%;
+
+    }
+
+
+    .content {
+        flex-direction: row;
+
+        width: 70%;
+        margin: auto;
+        justify-content: space-around;
+        box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
+    }
+
+    .content div {
+        height: 5rem;
+        flex-wrap: wrap;
+        text-align: left;
+        /* border-right: 1px solid hsl(0, 0%, 59%, .2); */
+        /* padding-right: 2rem; */
+    }
+
+    .content div:last-child {
+        border-right: none;
+    }
+
+    .ad-ip-adress {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 1rem;
+        background: white;
+        margin-bottom: 2rem;
+        height: 60px;
+        cursor: pointer;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+    }
+
+    .attribution {
+        margin-top: 2rem;
+    }
+}
